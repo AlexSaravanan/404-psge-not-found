@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.image > img{
+    width: 590px;
+    height: 448px;
+    
+}
+.grid{
+    display: flex;
+    position: absolute;
+    top: 256px;
+    left: 50px;
+
+}
+.logo{
+    margin: 40px 0 0 77px;
+}
+.logo > h1{
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+    color: #333333;
+}
+.main{
+    display: flex;
+    margin: 215px 119px 349px 77px ;
+    gap: 119px;
+    justify-content: space-evenly;
+}
+.description > h1{
+    font-family: 'Space Mono', monospace;
+    font-size: 64px;
+    width: 586px;
+    height: 190px;
+    font-weight: 700;
+    line-height: 95px;
+    letter-spacing: -0.035em;
+    margin-bottom: 36px;
+}
+.description > p{
+    margin-top: 36px;
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    width: 381px;
+    height: 108px;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+    font-weight: 400;
+}
+.description > button{
+    margin-top: 64px;
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    line-height: 21px;
+    width: 216px;
+    height: 68px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 450px){
+    .logo{
+        margin: 20px 0 0 24px;
+    }
+    .logo > h1{
+        font-size: 24px;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        margin: 64px 0 115px 24px;
+        gap: 60px;
+    }
+    .image > img{
+        width: 250px;
+        height: 238px;
+        margin: 0 0 0 10px;
+    }
+    .description > h1{
+        width: 350px;
+        height: 142px;
+        font-size: 48px;
+        margin-bottom: 30px;
+
+    }
+    .description > p{
+        width: 328px;
+        height: 81px;
+        font-size: 18px;
+    }
+    .description > button{
+        width: 216px;
+        height: 68px;
+        font-size: 14px;
+    }
+    
+}
+@media only screen and (max-width: 1050px){
+    .image > img{
+        width: 350px;
+        height: 280px;
+        margin: 0 0 0 20px;
+    }
+    .description > h1{
+        width: 350px;
+        height: 142px;
+        font-size: 48px;
+    }
+    .description > p{
+        width: 310px;
+        height: 81px;
+        font-size: 18px;
+    }
+    .description > button{
+        width: 216px;
+        height: 68px;
+        font-size: 14px;
+    }
+    .main{
+        gap: 30px;
+        margin: 64px 0 0 24px;
+    }
+}
